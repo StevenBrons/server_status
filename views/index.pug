@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  ul
+  - for (let i in list)
+    h3 #{list[i].title}
+    - for (let w in list[i].websites)
+      - const url2 = list[i].websites[w];
+      - const statusObject = currentStatus.filter(({url}) => url === url2)[0];
+      li 
+        span
+          span(style=statusObject.online?"color:green":"color:red") [#{statusObject.online?"online":"offline"}]
+          span  
+          a(class="url" href="http://" + url2) #{url2}
+          - const statusW = history.filter(({url}) => url === url2);
+          - for (let h in statusW)
+            - let hObj = statusW[h];
+            div(class="status offline")
+              div
+                ul
+                  li 
+                    b url:
+                    span #{hObj.url}
+                  li 
+                    b from:
+                    span #{hObj.from}
+                  li 
+                    b to: 
+                    span #{hObj.to}
