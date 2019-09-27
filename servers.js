@@ -3,7 +3,6 @@ module.exports = [
 		"title": "CodeFields",
 		"websites": [
 			"codefields.com",
-			"status.codefields.com",
 			// "cloud.codefields.com"
 		]
 	},
