@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.url {
+  color: darkslategray;
+  width: "200px";
+  display: "inline-block";
+}
+
+a:hover {
+  color: black;
+}
+
+.status {
+  width: 4px;
+  height: 4px;
+  border: 4px solid red;
+  padding: 2px;
+  margin-left: 10px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: red;
+  vertical-align: middle;
+  transition-duration: 0px;
+}
+
+.status:hover {
+  overflow: visible;
+}
+
+.status div {
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border: 2px solid black;
+  transform: translateY(10px)
+}
