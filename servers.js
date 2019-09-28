@@ -11,7 +11,6 @@ module.exports = [
 		"websites": [
 			"q-highschool.nl",
 			"app.q-highschool.nl",
-			"webgoat.q-highschool.nl",
 			// "api.q-highschool.nl",
 			"ctf.q-highschool.nl",
 			"informatica.q-highschool.nl",
