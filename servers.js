@@ -14,9 +14,9 @@ module.exports = [
 			// "api.q-highschool.nl",
 			"ctf.q-highschool.nl",
 			"informatica.q-highschool.nl",
+			"webgoat.q-highschool.nl",
 			"test.q-highschool.nl",
 			"backup.q-highschool.nl",
-			"webgoat.q-highschool.nl"
 		]
 	}
 ]
