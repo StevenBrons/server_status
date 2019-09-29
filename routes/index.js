@@ -52,8 +52,7 @@ async function checkStatus(url) {
 async function getStatusObject(url) {
   return {
     url,
-    online: await checkStatus("http://" + url),
-    https: await checkStatus("https://" + url),
+    online: await checkStatus("https://" + url),
     date: new Date(),
   }
 }
