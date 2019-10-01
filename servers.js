@@ -2,8 +2,8 @@ module.exports = [
 	{
 		"title": "CodeFields",
 		"websites": [
-			"codefields.com",
-			// "cloud.codefields.com"
+			// "codefields.com",
+			"cloud.codefields.com"
 		]
 	},
 	{
