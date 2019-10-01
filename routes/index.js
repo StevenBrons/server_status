@@ -41,10 +41,10 @@ setInterval(async () => {
 async function checkStatus(url) {
   return rp({
     uri: url,
-    timeout: 2000,
+    timeout: 4000,
   }).then(() => {
     return true;
-  }).catch(() => {
+  }).catch((e) => {
     return false;
   })
 }
@@ -52,8 +52,7 @@ async function checkStatus(url) {
 async function getStatusObject(url) {
   return {
     url,
-    online: await checkStatus("http://" + url),
-    https: await checkStatus("https://" + url),
+    online: await checkStatus("https://" + url),
     date: new Date(),
   }
 }
