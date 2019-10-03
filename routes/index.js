@@ -41,7 +41,7 @@ setInterval(async () => {
 async function checkStatus(url) {
   return rp({
     uri: url,
-    timeout: 4000,
+    timeout: 20000,
   }).then(() => {
     return true;
   }).catch((e) => {
